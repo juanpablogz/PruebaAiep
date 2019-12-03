@@ -1,0 +1,119 @@
+#map {
+	height: 500px;
+    width: 100%;
+    /* tamaño al mapa de google  */
+}
+body {
+    color:dimgray;
+    text-align:justify;
+}
+
+
+/* Centra website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* Tamaño de letra */
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+/* margen de fila*/
+.row {
+    margin: 10px -16px;
+}
+
+    /* Agregue relleno entre cada columna */
+    .row,
+    .row > .column {
+        padding: 8px;
+    }
+
+/* Crea tres columnas iguales que floten al lado de cada una */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Ocultar todos los elementos por defecto */
+}
+
+/* Borrar flotadores después de filas */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* La clase "show" se agrega a los elementos filtrados */
+.show {
+    display: block;
+}
+
+/* estilo a los botones*/
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+
+
+/* formato de imagen en Footer */
+footer {
+    background: url('images/top.png') no-repeat top center, url('images/line.png') repeat-x top, url('images/shadow.png') repeat-x top;
+    padding-top: 25px;
+    background-color:black;
+}
+
+/* formato de tamaño de letra */
+footer p, footer ul {
+    font-size: 0.8em;
+}
+
+footer h1 {
+    font-size: 1.1em;
+}
+
+/* formato para redes sociales */
+#footericons {
+text-align:center;
+margin: 0 auto;
+padding:30px;
+}
+
+/* estilo para redes sociales */
+#footericons ul li {
+list-style-type: none;
+text-align:center;
+margin-left:5px;
+}
+
+/* formato para iconos redes sociales */
+#footericons ul li:hover{
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+  text-shadow: 10px 5px 5px #000;
+} 

@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="imagenes/logo.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Turismo</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- logo -->
+        <a class="navbar-brand" href="index.html">
+            <i class="material-icons">
+                flight
+            </i>
+        </a>
+        <!-- links de paginas -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Quienessomos.html">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="lugares.html">Lugares Turisticos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pauta.html">Pauta Evaluación</a>
+            </li>
+        </ul>
+    </nav>    
+
+    <div class="main">
+        <h2>Galeria</h2>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+            <button class="btn" onclick="filterSelection('satiago')"> Santiago</button>
+            <button class="btn" onclick="filterSelection('norte')"> Zona Norte</button>
+            <button class="btn" onclick="filterSelection('centro')"> Zona Centro</button>
+            <button class="btn" onclick="filterSelection('sur')"> Zona Sur</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column satiago">
+                <div class="content">
+                    <img src="imagenes/santiago1.jfif" alt="Mountains" style="width:100%">
+                    <h4>Santiago</h4>
+                    <p>El funicular de Santiago está ubicado en el Cerro San Cristóbal, en la ciudad de Santiago de Chile</p>
+                </div>
+            </div>
+            <div class="column satiago">
+                <div class="content">
+                    <img src="imagenes/santiago2.jfif" alt="Lights" style="width:100%">
+                    <h4>Santiago</h4>
+                    <p>La Catedral Metropolitana de Santiago es la sede de la Arquidiócesis de Santiago de Chile y se ubica en la comuna de Santiago, frente a la Plaza de Armas</p>
+                </div>
+            </div>
+            <div class="column satiago">
+                <div class="content">
+                    <img src="imagenes/santiago3.jfif" alt="Nature" style="width:100%">
+                    <h4>Santiago</h4>
+                    <p>El Cerro Santa Lucía se ubica en el centro histórico de la ciudad de Santiago, capilla consagrada a la Virgen del Socorro y una ermita en honor a Santa Lucía</p>
+                </div>
+            </div>
+
+            <div class="column norte">
+                <div class="content">
+                    <img src="imagenes/norte1.jfif" alt="Mountains" style="width:100%">
+                    <h4>Zona Norte</h4>
+                    <p>La Mano del desierto es una escultura ubicada a 75 km al sur de la ciudad de Antofagasta, a un costado de la ruta 5 Panamericana</p>
+                </div>
+            </div>
+            <div class="column norte">
+                <div class="content">
+                    <img src="imagenes/norte2.jfif" alt="Lights" style="width:100%">
+                    <h4>Zona Norte</h4>
+                    <p>El Morro de Arica es un cerro costero ubicado en la parte sur de la ciudad homónima, en la XIV Región de Arica y Parinacota.</p>
+                </div>
+            </div>
+            <div class="column norte">
+                <div class="content">
+                    <img src="imagenes/norte3.jfif" alt="Nature" style="width:100%">
+                    <h4>Zona Norte</h4>
+                    <p>El monumento natural La Portada, que se ubica a 18 km al norte de la ciudad de Antofagasta</p>
+                </div>
+            </div>
+
+            <div class="column centro">
+                <div class="content">
+                    <img src="imagenes/centro1.jfif" alt="Mountains" style="width:100%">
+                    <h4>Zona Centro</h4>
+                    <p>El Castillo Wulff es una edificación señorial que se alza en un roquerío ubicado entre la desembocadura del Estero Marga-Marga y el balneario Caleta Abarca.</p>
+                </div>
+            </div>
+            <div class="column centro">
+                <div class="content">
+                    <img src="imagenes/centro2.jfif" alt="Lights" style="width:100%">
+                    <h4>Zona Centro</h4>
+                    <p>La ciudad de Viña del Mar, está localizada en la zona central del país y pertenece a la Región de Valparaíso.</p>
+                </div>
+            </div>
+            <div class="column centro">
+                <div class="content">
+                    <img src="imagenes/centro3.jfif" alt="Nature" style="width:100%">
+                    <h4>Zona Centro</h4>
+                    <p>La Región de Valparaíso​​ es una de las dieciséis regiones en que se divide Chile. Su capital es la ciudad de Valparaíso</p>
+                </div>
+            </div>
+
+            <div class="column sur">
+                <div class="content">
+                    <img src="imagenes/sur1.jfif" alt="Mountains" style="width:100%">
+                    <h4>Zona Sur</h4>
+                    <p>Los Saltos Del Laja o Salto del Laja, son cuatro cascadas del río de La Laja, ubicadas en la Región del Biobío en Chile.</p>
+                </div>
+            </div>
+            <div class="column sur">
+                <div class="content">
+                    <img src="imagenes/sur2.jfif" alt="Lights" style="width:100%">
+                    <h4>Zona Sur</h4>
+                    <p>El volcán Osorno es un estratovolcán que se encuentra ubicado en la cordillera de los Andes, al borde del lago Llanquihue, en Chile.</p>
+                </div>
+            </div>
+            <div class="column sur">
+                <div class="content">
+                    <img src="imagenes/sur3.jfif" alt="Nature" style="width:100%">
+                    <h4>Zona Sur</h4>
+                    <p>Los palafitos son viviendas donde los pilares o simples estacas o casas en el agua, son construidas sobre cuerpos de aguas tranquilas como lagos.</p>
+                </div>
+            </div>
+            <!-- END GRID -->
+        </div>
+
+        <!-- END MAIN -->
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <footer>
+      <div class="container">
+          <div class="row" >
+              <div class="col-lg-2 col-md-12 mb-4">
+                  <div class="view overlay z-depth-1-half">
+                      <img src="imagenes/pic1.jfif" class="img-fluid" alt="">
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <div class="view overlay z-depth-1-half">
+                      <img src="imagenes/pic2.jfif" class="img-fluid" alt="">
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <div class="view overlay z-depth-1-half">
+                      <img src="imagenes/pic3.jfif" class="img-fluid" alt="">
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <div class="view overlay z-depth-1-half">
+                      <img src="imagenes/pic4.jfif" class="img-fluid" alt="">
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-12 mb-4">
+                  <div class="view overlay z-depth-1-half">
+                      <h1>TALLER DE APLICACIONES PARA INTERNET</h1>
+                      <ul>
+                          <li><a>Profesor : FELIPE IGNACIO CABRERA SALINAS</a></li>
+                          <li><a>Alumnos : Juan Pablo Gómez / Juan Pablo Galaz</a></li>
+                          <li><a>Sección : TPC203 / 2100</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>  
+    </footer>
+</body>
+</html>
